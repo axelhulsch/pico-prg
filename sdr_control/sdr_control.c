@@ -12,6 +12,7 @@ int main() {
     gpio_init(LED_PIN);
     gpio_set_dir(LED_PIN, GPIO_OUT);
 
+
     const uint PTT_PIN = 6;//GP6
     gpio_init(PTT_PIN);
     gpio_set_dir(PTT_PIN, GPIO_IN);
