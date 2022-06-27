@@ -1,0 +1,30 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "bash Picoprobe",
+            "command": "picoprobe.sh"
+       },
+       {
+        "label": "Attach Picoprobe",
+        "command": "usbipd.exe",
+        "args": [
+            "wsl",
+            "attach",
+            "-i",
+            "2e8a:0004"
+        ],
+        },
+
+       {
+        "label": "Detach Picoprobe",
+        "command": "usbipd.exe",
+        "args": [
+            "wsl",
+            "detach",
+            "-i",
+            "2e8a:0004"
+        ],
+    }
+]
+}
