@@ -21,6 +21,7 @@ include(auto_set_url.cmake)
 add_subdirectory(sdr_control)
 add_subdirectory(resolver)
 add_subdirectory(freq)
+add_subdirectory(pico_i2c_slave)
 
 add_compile_options(-Wall
         -Wno-format          # int != int32_t as far as the compiler is concerned because gcc has int32_t as long int
